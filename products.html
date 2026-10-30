@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | Stridely</title>
+<meta name="description" content="Casual, running and formal shoes from Rs. 3,900.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Stridely home"><img src="images/logo-icon.png" alt="" width="46" height="28"><span>Stridely</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="products.html" aria-current="page">Products</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-title"><div class="wrap"><h1>Products</h1><p>Seven styles, from Rs. 3,900 to Rs. 11,900. Choose a category or set your budget.</p></div></section>
+<section class="section wrap">
+  <div class="filters" role="group" aria-label="Filter products">
+    <div class="chips">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="casual">Casual</button>
+      <button class="chip" data-filter="running">Running</button>
+      <button class="chip" data-filter="formal">Formal</button>
+    </div>
+    <label class="budget">Budget up to <output id="budgetOut">Rs. 12,000</output>
+      <input type="range" id="budget" min="4000" max="12000" step="500" value="12000">
+    </label>
+  </div>
+  <p id="count" class="count" aria-live="polite">Showing 7 of 7 shoes</p>
+  <div class="grid" id="grid"><article class="card product" data-cat="casual" data-price="3900">
+  <img src="images/canvas-slip-on.svg" alt="Canvas Slip-On shoe illustration" width="420" height="240" loading="lazy">
+  <div class="card-body">
+    <h3>Canvas Slip-On</h3>
+    <p>Light canvas slip-on for easy everyday wear. Quick to put on between classes.</p>
+    <p class="meta">Sizes 38-44</p>
+    <div class="buy"><strong class="price">Rs. 3,900</strong><a class="btn btn-small" href="contact.html?product=Canvas%20Slip-On">Order now</a></div>
+  </div>
+</article><article class="card product" data-cat="casual" data-price="4500">
+  <img src="images/campus-walk.svg" alt="Campus Walk Sneakers shoe illustration" width="420" height="240" loading="lazy">
+  <div class="card-body">
+    <h3>Campus Walk Sneakers</h3>
+    <p>Cushioned insole and flexible sole for all-day walking from lectures to the canteen.</p>
+    <p class="meta">Sizes 38-44</p>
+    <div class="buy"><strong class="price">Rs. 4,500</strong><a class="btn btn-small" href="contact.html?product=Campus%20Walk%20Sneakers">Order now</a></div>
+  </div>
+</article><article class="card product" data-cat="casual" data-price="4900">
+  <img src="images/cityloafer.svg" alt="CityLoafer Casual shoe illustration" width="420" height="240" loading="lazy">
+  <div class="card-body">
+    <h3>CityLoafer Casual</h3>
+    <p>Smart-casual slip-on that looks sharp at presentations and stays relaxed on the go.</p>
+    <p class="meta">Sizes 39-44</p>
+    <div class="buy"><strong class="price">Rs. 4,900</strong><a class="btn btn-small" href="contact.html?product=CityLoafer%20Casual">Order now</a></div>
+  </div>
+</article><article class="card product" data-cat="running" data-price="6800">
+  <img src="images/flexrun.svg" alt="FlexRun Trainers shoe illustration" width="420" height="240" loading="lazy">
+  <div class="card-body">
+    <h3>FlexRun Trainers</h3>
+    <p>Lightweight, breathable trainers with a grippy sole for running and gym sessions.</p>
+    <p class="meta">Sizes 39-45</p>
+    <div class="buy"><strong class="price">Rs. 6,800</strong><a class="btn btn-small" href="contact.html?product=FlexRun%20Trainers">Order now</a></div>
+  </div>
+</article><article class="card product" data-cat="formal" data-price="9800">
+  <img src="images/executive-derby.svg" alt="Executive Derby Brown shoe illustration" width="420" height="240" loading="lazy">
+  <div class="card-body">
+    <h3>Executive Derby Brown</h3>
+    <p>Polished brown leather derby for work and events. Formal look, comfortable fit.</p>
+    <p class="meta">Sizes 40-45</p>
+    <div class="buy"><strong class="price">Rs. 9,800</strong><a class="btn btn-small" href="contact.html?product=Executive%20Derby%20Brown">Order now</a></div>
+  </div>
+</article><article class="card product" data-cat="formal" data-price="11500">
+  <img src="images/office-oxford.svg" alt="Office Oxford Black shoe illustration" width="420" height="240" loading="lazy">
+  <div class="card-body">
+    <h3>Office Oxford Black</h3>
+    <p>Classic black leather oxford for meetings and interviews.</p>
+    <p class="meta">Sizes 40-45</p>
+    <div class="buy"><strong class="price">Rs. 11,500</strong><a class="btn btn-small" href="contact.html?product=Office%20Oxford%20Black">Order now</a></div>
+  </div>
+</article><article class="card product" data-cat="formal" data-price="11900">
+  <img src="images/monk-strap.svg" alt="Classic Monk Strap shoe illustration" width="420" height="240" loading="lazy">
+  <div class="card-body">
+    <h3>Classic Monk Strap</h3>
+    <p>Double-buckle leather monk strap for a modern formal look.</p>
+    <p class="meta">Sizes 40-44</p>
+    <div class="buy"><strong class="price">Rs. 11,900</strong><a class="btn btn-small" href="contact.html?product=Classic%20Monk%20Strap">Order now</a></div>
+  </div>
+</article></div>
+  <p id="empty" class="empty" hidden>No shoes match this budget and category. Raise your budget or choose All.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <img src="images/logo.png" alt="Stridely, Step Into Your Day" class="foot-logo" width="140" height="116">
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="landing.html">Campus Walk offer</a></li></ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>hello@stridely.example<br>+94 70 000 0000<br>Mon to Sat, 9 AM to 6 PM</p>
+    </div>
+  </div>
+  <p class="wrap fine">Stridely is a fictional business created for a university assignment. Contact details and testimonials are samples only.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
